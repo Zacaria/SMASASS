@@ -1,0 +1,20 @@
+/**
+  Layouts are major sections of the page (header, footer, sidebar)
+  Id's use is tolerable here
+*/
+
+#cv {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: $color_background_body;
+}
+.mainDetails {
+  padding: 25px 35px;
+  border-bottom: 2px solid;
+  background: $color_background_header;
+}
+
+.mainArea {
+  padding: 0 40px;
+}

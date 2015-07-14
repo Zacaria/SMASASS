@@ -1,0 +1,346 @@
+/**
+* I choose this one because of it's lightwheight
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+  The partials folder contains code that output css
+  Here we say 'rule = var'
+  Contains base rules
+*/
+/**
+  Aggregates modules files
+  Vars contain mixins, declarations, variables
+  Everything not outputing CSS
+  Here we say 'var ='
+*/
+.clear {
+  clear: both; }
+
+#contactDetails ul li a {
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+
+html, body {
+  background: #181818;
+  font-family: "Lato", Helvetica, arial, sans-serif;
+  font-size: 16px;
+  color: #222; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #444; }
+
+@font-face {
+  font-family: 'Rokkitt';
+  src: url("../fonts/rokkitt/Rokkitt.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/**
+  Layouts are major sections of the page (header, footer, sidebar)
+  Id's use is tolerable here
+*/
+#cv {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #f3f3f3; }
+
+.mainDetails {
+  padding: 25px 35px;
+  border-bottom: 2px solid;
+  background: #ededed; }
+
+.mainArea {
+  padding: 0 40px; }
+
+/**
+  Modules are autonomous sections in a page
+  Modules have to be modular and reusable
+
+  header .block-list { ... }  Bad idea =(
+  .block-list-fit { ... }     Good idea =)
+
+  Rules for same modules have to share same base name :
+  .btn {}
+  .btn-search {}
+  .btn-small {}
+  .btn-large {}
+
+*/
+.name {
+  float: left; }
+  .name .name-title {
+    line-height: 1.3em;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    margin-bottom: -6px;
+    width: 350px; }
+  .name .name-sub-title {
+    font-size: 2em;
+    margin-left: 2px;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif; }
+
+#headshot {
+  width: 12.5%;
+  float: left;
+  margin-right: 30px; }
+  #headshot img {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; }
+
+#contactDetails {
+  float: right; }
+  #contactDetails ul {
+    list-style-type: none;
+    font-size: 0.9em;
+    margin-top: 2px; }
+    #contactDetails ul li {
+      margin-bottom: 6px;
+      color: #444; }
+      #contactDetails ul li a {
+        text-decoration: none;
+        color: #444; }
+
+.section {
+  border-top: 1px solid #dedede;
+  padding: 20px 0 0; }
+  .section .sectionTitle {
+    float: left;
+    width: 21%; }
+    .section .sectionTitle h1 {
+      font-family: "Rokkitt", Helvetica, arial, sans-serif;
+      font-style: italic;
+      font-size: 1.5em; }
+  .section .sectionContent {
+    float: right;
+    width: 73.5%; }
+    .section .sectionContent h2 {
+      font-family: "Rokkitt", Helvetica, arial, sans-serif;
+      font-size: 1.5em;
+      margin-bottom: -2px; }
+    .section .sectionContent .sectionSubDetails {
+      font-size: 0.8em;
+      font-style: italic;
+      margin-bottom: 3px; }
+
+.section:first-child {
+  border-top: 0; }
+
+.section:last-child {
+  padding: 20px 0 10px; }
+
+.keySkills {
+  list-style-type: none;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #444; }
+  .keySkills ul li {
+    margin-bottom: 3px; }
+  .keySkills .skill-fw {
+    display: inline-block;
+    width: 74px; }
+
+.tags {
+  margin: 0;
+  padding: 0;
+  right: 24px;
+  bottom: -12px;
+  list-style: none;
+  display: inline-block; }
+  .tags .tag {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    font-size: 11px;
+    margin-left: 16px;
+    padding: 0 5px 0 6px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px; }
+  .tags .tag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 8px 0; }
+  .tags .tag::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    float: left;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff; }
+
+/**
+  States of elements
+  Only place where "!important" is good to use
+  Defines a final state of an element, there should not be two states on an element
+
+  States can be :
+  class names
+  pseudo-class
+  media queries
+
+  Primarily used by JavaScript
+
+  identifiers have to say what is the intention of the rule :
+  .is-loading {}
+  .is-collapsed {}
+
+  When the state relates to a module
+  .is-btn-active {}
+  .is-btn-disabled {}
+*/
+@media all and (min-width: 602px) and (max-width: 800px) {
+  #headshot {
+    display: none; }
+
+  .keySkills {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+@media all and (max-width: 601px) {
+  #cv {
+    width: 95%;
+    margin: 10px auto;
+    min-width: 280px; }
+
+  #headshot {
+    display: none; }
+
+  #name, #contactDetails {
+    float: none;
+    width: 100%;
+    text-align: center; }
+
+  .sectionTitle, .sectionContent {
+    float: none;
+    width: 100%; }
+
+  .sectionTitle {
+    margin-left: -2px;
+    font-size: 1.25em; }
+
+  .keySkills {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+@media all and (max-width: 480px) {
+  .mainDetails {
+    padding: 15px 15px; }
+
+  section {
+    padding: 15px 0 0; }
+
+  .mainArea {
+    padding: 0 25px; }
+
+  .keySkills {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; }
+
+  #name h1 {
+    line-height: .8em;
+    margin-bottom: 4px; } }
+.theme-yellow .mainDetails {
+  border-bottom: 1px solid #cf8a05; }
+.theme-yellow .sectionTitle h1 {
+  color: #cf8a05; }
+.theme-yellow #contactDetails ul li a:hover {
+  color: #cf8a05; }
+
+.theme-orange .mainDetails {
+  border-bottom: 2px solid #d44d14; }
+.theme-orange .sectionTitle h1 {
+  color: #d44d14; }
+.theme-orange #contactDetails ul li a:hover {
+  color: #d44d14; }
+.theme-orange .tag {
+  background-color: #d44d14; }
+.theme-orange .tag:before {
+  border-color: transparent #d44d14 transparent transparent; }
+
+/**
+  Hot and shamefull fixes added at the end of the full css file
+  Has to be documented !!
+  => What does it refer ?
+  => Why (so much hate) ?
+  => How does it work ?
+  => How would it be cleanable later ?
+
+  Needs to be cleaned regularly
+*/
+
+/*# sourceMappingURL=main.css.map */

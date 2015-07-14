@@ -1,0 +1,41 @@
+.section {
+  border-top: 1px solid $color_section_border;
+  padding: 20px 0 0;
+
+  .sectionTitle {
+    float: left;
+    width: 21%;
+    h1 {
+      font-family: $font_title;
+      font-style: italic;
+      font-size: 1.5em;
+      //  color: $color_theme;
+    }
+  }
+
+  .sectionContent {
+    float: right;
+    width: 73.5%;
+    h2 {
+      font-family: $font_title;
+      font-size: 1.5em;
+      margin-bottom: -2px;
+    }
+    .sectionSubDetails {
+      font-size: 0.8em;
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.section:first-child {
+  border-top: 0;
+}
+
+.section:last-child {
+  padding: 20px 0 10px;
+}
+
+
+

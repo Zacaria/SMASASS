@@ -1,0 +1,20 @@
+/**
+  Modules are autonomous sections in a page
+  Modules have to be modular and reusable
+
+  header .block-list { ... }  Bad idea =(
+  .block-list-fit { ... }     Good idea =)
+
+  Rules for same modules have to share same base name :
+  .btn {}
+  .btn-search {}
+  .btn-small {}
+  .btn-large {}
+
+*/
+
+//Aggregate modules
+@import "header";
+@import "section";
+@import "skills";
+@import "tags";

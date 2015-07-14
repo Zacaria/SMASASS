@@ -1,0 +1,24 @@
+/**
+  States of elements
+  Only place where "!important" is good to use
+  Defines a final state of an element, there should not be two states on an element
+
+  States can be :
+  class names
+  pseudo-class
+  media queries
+
+  Primarily used by JavaScript
+
+  identifiers have to say what is the intention of the rule :
+  .is-loading {}
+  .is-collapsed {}
+
+  When the state relates to a module
+  .is-btn-active {}
+  .is-btn-disabled {}
+*/
+
+
+
+//Media-queries

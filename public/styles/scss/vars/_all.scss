@@ -1,0 +1,27 @@
+/**
+  Aggregates modules files
+  Vars contain mixins, declarations, variables
+  Everything not outputing CSS
+  Here we say 'var ='
+*/
+
+@import "colors";
+@import "fonts";
+
+.clear{
+    clear: both;
+}
+
+@mixin columnCount($count){
+  -moz-column-count: $count;
+  -webkit-column-count: $count;
+  column-count: $count;
+}
+
+%transitionSlowEase{
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}

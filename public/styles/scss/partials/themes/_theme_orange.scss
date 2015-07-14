@@ -1,0 +1,22 @@
+$color_theme_orange: #d44d14;
+.theme-orange {
+  .mainDetails {
+    border-bottom: 2px solid $color_theme_orange;
+  }
+
+  .sectionTitle h1 {
+    color: $color_theme_orange;
+  }
+
+  #contactDetails ul li a:hover {
+    color: $color_theme_orange;
+  }
+
+  .tag {
+    background-color: $color_theme_orange;
+  }
+
+  .tag:before{
+    border-color:transparent #d44d14 transparent transparent;
+  }
+}

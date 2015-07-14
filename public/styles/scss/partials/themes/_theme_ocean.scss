@@ -1,0 +1,37 @@
+/**
+  Redefines base, layout, module and state rules to switch between themes
+
+  This way :
+
+  //Default rules
+  body {
+      font-family: "Roboto", sans-serif;
+  }
+
+  header {
+      background-color: #33F;
+      color: #A66105;
+  }
+
+  .block-list > li{
+      border: 0 dashed #00D;
+  }
+
+  //Overwritten rules
+  .theme-ocean {
+    font-family: "Roboto", sans-serif;
+
+    .theme-ocean header {
+        background-color: #33F;
+        color: #A66105;
+    }
+
+    .theme-ocean .block-list > li{
+        border: 0 dashed #00D;
+    }
+  }
+
+  This way, you can import all themes at the same time
+  You just have to add the theme root class to apply it dynamically
+  Using javascript for example
+*/

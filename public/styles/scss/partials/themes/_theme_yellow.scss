@@ -1,0 +1,14 @@
+$color_theme_yellow: #cf8a05;
+.theme-yellow {
+  .mainDetails {
+    border-bottom: 1px solid $color_theme_yellow;
+  }
+
+  .sectionTitle h1 {
+    color: $color_theme_yellow;
+  }
+
+  #contactDetails ul li a:hover {
+    color: $color_theme_yellow;
+  }
+}
