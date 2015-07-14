@@ -4,7 +4,6 @@ This is an implementation of the Simple and Modular Architecture for CSS convent
  
 This is mostly inspired by <http://thesassway.com/beginner/how-to-structure-a-sass-project>
 
-***
 
 ##Why SMACSS ?
 
@@ -15,8 +14,6 @@ So tired of having Ctrl+F adventures in my css' hundreds of lines ...
 Sass comes with a lot of features allowing SMACSS to be even more powerful 
 
 And also because it's cool
-
-***
 
 #Try it
 
@@ -30,7 +27,6 @@ And also because it's cool
 -   Watchers on scss, view folder, and server file
 -   Create build dist by running : `grunt build`
 
-***
 
 #Get started
 
@@ -40,7 +36,6 @@ And also because it's cool
     
     `<link type="text/css" rel="stylesheet" href="link/to/css/main.css">`
 
-***
 
 #Architecture explanation
 
