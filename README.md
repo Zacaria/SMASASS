@@ -27,6 +27,8 @@ And also because it's cool
 -   Watchers on scss, view folder, and server file
 -   Create build dist by running : `grunt build`
 
+__Demo__ [here](http://cv-chtatarz.rhcloud.com/)
+
 
 #Get started
 
