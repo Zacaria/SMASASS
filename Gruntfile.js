@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         // Open Config
         open: {
             site: {
-                path: 'http://localhost:3000'
+                path: 'http://localhost:8080'
             }
         },
         // Express Config
