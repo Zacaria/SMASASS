@@ -197,8 +197,11 @@ p {
   margin-bottom: 20px;
   font-size: 1em;
   color: #444; }
-  .keySkills ul li {
-    margin-bottom: 3px; }
+  .keySkills .skill {
+    margin-bottom: 3px;
+    display: inline-block;
+    min-width: 150px;
+    margin-left: 15px; }
   .keySkills .skill-fw {
     display: inline-block;
     width: 74px; }
@@ -262,54 +265,65 @@ p {
   .is-btn-active {}
   .is-btn-disabled {}
 */
-@media all and (min-width: 602px) and (max-width: 800px) {
-  #headshot {
-    display: none; }
-
-  .keySkills {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2; } }
-@media all and (max-width: 601px) {
+@media all and (min-width: 663px) and (max-width: 740px) {
   #cv {
-    width: 95%;
-    margin: 10px auto;
-    min-width: 280px; }
+    margin: 0;
+    width: 100%; }
 
   #headshot {
     display: none; }
 
-  #name, #contactDetails {
-    float: none;
-    width: 100%;
-    text-align: center; }
+  .mainArea {
+    padding: 0 10px; } }
+@media all and (max-width: 662px) {
+  #cv {
+    margin: 0;
+    width: 100%; }
 
+  .name .name-title {
+    width: 100%; }
+
+  .section {
+    display: flex;
+    flex-flow: column wrap; }
+    .section .sectionContent {
+      width: 100%; }
+
+  .mainArea {
+    padding: 0 10px; } }
+@media all and (min-width: 311px) and (max-width: 662px) {
   .sectionTitle, .sectionContent {
     float: none;
     width: 100%; }
 
   .sectionTitle {
     margin-left: -2px;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    padding-bottom: 5px; }
 
   .keySkills {
     -moz-column-count: 2;
     -webkit-column-count: 2;
-    column-count: 2; } }
-@media all and (max-width: 480px) {
+    column-count: 2; }
+    .keySkills .skill-fw {
+      padding-bottom: 5px; } }
+@media all and (max-width: 595px) {
   .mainDetails {
-    padding: 15px 15px; }
-
-  section {
-    padding: 15px 0 0; }
-
-  .mainArea {
-    padding: 0 25px; }
-
+    display: flex;
+    flex-flow: column wrap; }
+    .mainDetails .name .name-title {
+      text-align: center;
+      width: 100%; }
+    .mainDetails #contactDetails {
+      width: 100%;
+      text-align: center; } }
+@media all and (max-width: 320px) {
   .keySkills {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1; }
+    .keySkills .skill-fw {
+      padding-bottom: 5px; }
 
   #name h1 {
     line-height: .8em;

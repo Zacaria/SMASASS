@@ -4,8 +4,11 @@
   margin-bottom: 20px;
   font-size: 1em;
   color: #444;
-  ul li {
+  .skill {
     margin-bottom: 3px;
+    display: inline-block;
+    min-width: 150px;
+    margin-left: 15px;
   }
   .skill-fw {
     display: inline-block;

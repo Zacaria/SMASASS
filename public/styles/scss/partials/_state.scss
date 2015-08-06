@@ -23,34 +23,53 @@
 
 //Media-queries
 
-@media all and (min-width: 602px) and (max-width: 800px) {
+@media all and (min-width: 663px) and (max-width: 740px) {
+  #cv {
+    margin: 0;
+    width: 100%;
+  }
+
   #headshot {
     display: none;
   }
 
-  .keySkills {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+  .mainArea{
+    padding: 0 10px;
+  }
+
+  //.keySkills {
+  //  -moz-column-count: 3;
+  //  -webkit-column-count: 3;
+  //  column-count: 3;
+  //}
+}
+
+@media all and (max-width: 662px){
+  #cv {
+    margin: 0;
+    width: 100%;
+    //min-width: 280px;
+  }
+
+  .name .name-title{
+    width: 100%;
+  }
+
+  .section {
+    display:flex;
+    flex-flow: column wrap;
+
+    .sectionContent{
+      width: 100%;
+    }
+  }
+
+  .mainArea{
+    padding: 0 10px;
   }
 }
 
-@media all and (max-width: 601px) {
-  #cv {
-    width: 95%;
-    margin: 10px auto;
-    min-width: 280px;
-  }
-
-  #headshot {
-    display: none;
-  }
-
-  #name, #contactDetails {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
+@media all and (min-width: 311px) and (max-width: 662px) {
 
   .sectionTitle, .sectionContent {
     float: none;
@@ -60,32 +79,51 @@
   .sectionTitle {
     margin-left: -2px;
     font-size: 1.25em;
+    padding-bottom: 5px;
   }
 
   .keySkills {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
+    .skill-fw{
+      padding-bottom: 5px;
+    }
   }
 }
 
-@media all and (max-width: 480px) {
-  .mainDetails {
-    padding: 15px 15px;
-  }
+@media all and (max-width: 595px){
+  //#contactDetails{
+  //  width: 50%;
+  //  display: block;
+  //  margin: auto;
+  //}
 
-  section {
-    padding: 15px 0 0;
-  }
+  .mainDetails{
+    display: flex;
+    flex-flow: column wrap;
+    .name .name-title{
+      text-align: center;
+      width: 100%;
+    }
 
-  .mainArea {
-    padding: 0 25px;
+    #contactDetails {
+      width: 100%;
+      text-align: center;
+    }
   }
+}
 
+@media all and (max-width: 320px) {
+  
   .keySkills {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
+
+    .skill-fw{
+      padding-bottom: 5px;
+    }
   }
 
   #name h1 {
