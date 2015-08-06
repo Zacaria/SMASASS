@@ -82,6 +82,9 @@ p {
   margin-bottom: 20px;
   color: #444; }
 
+a {
+  text-decoration: none; }
+
 @font-face {
   font-family: 'Rokkitt';
   src: url("../fonts/rokkitt/Rokkitt.otf") format("truetype");
@@ -155,7 +158,7 @@ p {
     font-size: 0.9em;
     margin-top: 2px; }
     #contactDetails ul li {
-      margin-bottom: 6px;
+      margin-bottom: 9px;
       color: #444; }
       #contactDetails ul li a {
         text-decoration: none;
@@ -281,7 +284,8 @@ p {
     width: 100%; }
 
   .name .name-title {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 15px; }
 
   .section {
     display: flex;
@@ -345,6 +349,8 @@ p {
   background-color: #d44d14; }
 .theme-orange .tag:before {
   border-color: transparent #d44d14 transparent transparent; }
+.theme-orange .link {
+  color: #d44d14; }
 
 /**
   Hot and shamefull fixes added at the end of the full css file

@@ -19,4 +19,8 @@ $color_theme_orange: #d44d14;
   .tag:before{
     border-color:transparent #d44d14 transparent transparent;
   }
+
+  .link{
+    color: $color_theme_orange;
+  }
 }
