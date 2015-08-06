@@ -18,6 +18,10 @@ module.exports = function (grunt) {
                     'scripts/**/*.js'
                 ]
             },
+            jade: {
+                files: ['public/views/**/*'],
+                tasks: ['jade:compile']
+            },
             css: {
                 files: [
                     'public/styles/css/**/*.css'
@@ -54,6 +58,17 @@ module.exports = function (grunt) {
             dev: {
                 options: {
                     script: 'server.js'
+                }
+            }
+        },
+        // Jade Config
+        jade:{
+            compile: {
+                options: {
+
+                },
+                files: {
+                    "public/views/index.html" : ["public/views/index.jade"]
                 }
             }
         },
