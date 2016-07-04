@@ -151,7 +151,7 @@ Feel free to choose your own <http://cssreset.com/>
 
 This file defines the states of elements (like inputs, divs)
 
-This is the only place where "!important" is good to use
+This is the only place where `!important`  is good to use
 
 It defines a final state of an element, therefore, there should not be two states for an element
 
