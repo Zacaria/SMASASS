@@ -1,28 +1,28 @@
-#[SASS](http://sass-lang.com/) + [SMACSS](http://smacss.com/)
+# [SASS](http://sass-lang.com/) + [SMACSS](http://smacss.com/)
 
 This is an implementation of the Simple and Modular Architecture for CSS conventions and a SASS Architecture for my own Curriculum.
  
 This is mostly inspired by <http://thesassway.com/beginner/how-to-structure-a-sass-project>
 
 
-##Why SMACSS ?
+## Why SMACSS ?
 
 So tired of having Ctrl+F adventures in my css' hundreds of lines ...
 
-##Why SASS ?
+## Why SASS ?
 
 Sass comes with a lot of features allowing SMACSS to be even more powerful 
 
 And also because it's cool
 
-#Try it
+# Try it
 
 -   Copy this repo : `git clone https://github.com/Zacaria/SMASASS`
 -   Install the dependencies : `npm install`
 -   Launch the server : `grunt serve`
 -   Edit files : reload and recompilation are automatic
 
-##Demo features
+## Demo features
 
 -   Watchers on scss, view folder, and server file
 -   Create build dist by running : `grunt build`
@@ -30,7 +30,7 @@ And also because it's cool
 __Demo__ [here](http://cv-chtatarz.rhcloud.com/)
 
 
-#Get started
+# Get started
 
 - Grab the \_blank folder
 - Copy it into your own project
@@ -39,7 +39,7 @@ __Demo__ [here](http://cv-chtatarz.rhcloud.com/)
     `<link type="text/css" rel="stylesheet" href="link/to/css/main.css">`
 
 
-#Architecture explanation
+# Architecture explanation
 
 Head to the core of the project : /public/styles/scss
     
@@ -62,13 +62,13 @@ Head to the core of the project : /public/styles/scss
 
          
 <a name="partials"/>         
-##partials
+## partials
 The partials folder contains code that output css
 
 In this folder, we say 'rule = var'
          
 <a name="layout"/>         
-##layout
+## layout
 
 All layouts are centralized by `_layouts.scss`
 
@@ -77,7 +77,7 @@ Layouts are major sections of the page (header, footer, sidebar)
 Id's use is tolerable here.
 
 <a name="modules"/>
-##modules
+## modules
 
 All modules are centralized by `_modules.scss` 
 
@@ -96,7 +96,7 @@ Rules for same modules have to share same base name :
     .btn-large {}
 
 <a name="themes"/>
-##themes
+## themes
 
 Redefines base, layout, module and state rules to switch between themes
 
@@ -135,19 +135,19 @@ This way, you can import all themes at the same time.
 You just have to add the theme root class to apply it dynamically, using javascript for example.
 
 <a name="base"/>
-##base
+## base
 
 Base file imports vars and defines rules for html tags
 
 <a name="reset"/>
-##reset
+## reset
 
 Reset is a way of cleaning the styling differences between browsers in order to have a consistent baseline
 
 Feel free to choose your own <http://cssreset.com/>
 
 <a name="state"/>
-##state
+## state
 
 This file defines the states of elements (like inputs, divs)
 
@@ -173,21 +173,21 @@ When the state relates to a module
     .is-btn-disabled {}
 
 <a name="typo"/>
-##typo
+## typo
 
 This is the only place where we should define typos
 
 Be careful, the given path must be relative to main.scss
 
 <a name="vars"/>
-##vars
+## vars
 
 Vars are centralized by `_all.scss`
 
 This is also the place for mixins
 
 <a name="shame"/>
-##shame
+## shame
 
 In the rush of development project we should allow some shameful non SMASASS code
 
@@ -201,7 +201,7 @@ It has to be documented !!
 Of course this needs to be cleaned regularly
 
 <a name="main"/>
-##main
+## main
 
 The main file imports everything in this order : 
 
@@ -216,4 +216,4 @@ The main file imports everything in this order :
 
 This is the only file that compass compiles.
 
-#Suggestions ?
+# Suggestions ?
